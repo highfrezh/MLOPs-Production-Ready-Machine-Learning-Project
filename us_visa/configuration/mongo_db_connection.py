@@ -8,6 +8,11 @@ from us_visa.constants import DATABASE_NAME, MONGODB_URL_KEY
 import pymongo
 import certifi
 
+from dotenv import load_dotenv
+
+# Load environment variables from the .env file
+load_dotenv()
+
 ca = certifi.where()
 
 class MongoDBClient:
